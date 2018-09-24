@@ -28,8 +28,10 @@ public class Circles {
         g.drawLine(x, y+size/2, size+x, size/2+y);  
         //Vertical Mid
         g.drawLine(size/2+x, y, size/2+x, size+y);
+        //Draws Concentric Circles
         for (int circles = 1; circles < circleCount; circles++) {
-            //g.drawOval((x+(size/2))-((size/circles)/2),(y+(size/2))-((size/circles)/2),size/circles, size/circles);
+            //As the circle count gets smaller the spacing will scale accordingly
+            //The factor variable is just storing an expression that returns an integer
             int factor = size-((size/circleCount)*circles);
             g.drawOval((x+(size/2))-(factor/2),(y+(size/2))-(factor/2),factor, factor);
         }
