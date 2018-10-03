@@ -2,7 +2,6 @@
  * NumUnique
  */
 public class NumUnique {
-
     public static void main(String[] args) {
         System.out.println(numUnique(1,1,1));
     }
@@ -14,7 +13,6 @@ public class NumUnique {
         if(a!=c&&b!=c){
             counter++;
         }
-        
         return counter;
     }
 }
