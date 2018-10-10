@@ -1,9 +1,5 @@
-/**
- * LongestName
- */
 import java.util.*;
 public class LongestName {
-
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         longestName(console, 3);
@@ -28,8 +24,7 @@ public class LongestName {
                 else{
                     tie = tie;
                 }         
-            }
-            
+            }            
             if(tie){
                 System.out.println(record + "'s name is longest");
                 System.out.println("(There was a tie!)");
